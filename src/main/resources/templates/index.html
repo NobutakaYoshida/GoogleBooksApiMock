@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Google Book Apis</title>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="header">
+                <p class="header__title">Google Book Apis</p>
+            </div>
+            <div class="search">
+                <div class="search__text">
+                    <input type="text" id="search-word" class="search__text__input" placeholder="検索する">
+                </div>
+                <button id="search-button" class="search__btn">検索する</button>
+            </div>
+        </div>
+    </div>
+    
+    <div>表示件数：
+      <select id="displayed-num">
+        <option value=10>10件</option>
+        <option value=20>20件</option>
+        <option value=30>30件</option>
+        <option value=40>40件</option>
+      </select>
+    </div>
+    
+    <ul class="lists"></ul>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../static/js/index.js" th:src="@{/js/index.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/*
+ * reset
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Base
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: #eee;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.3;
+  word-wrap: break-word;
+  font-family: YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+}
+ol, ul, li { list-style: none; }
+span, i { display: inline-block; }
+input, textarea, button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+}
+input:-webkit-autofill, textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.wrapper {
+  padding: 20px;
+}
+.container {
+}
+.header {
+  width: 100%;
+  background-color: #43cee0;
+}
+.header__title {
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.search {
+  overflow: hidden;
+  margin-bottom: 50px;
+  background: #fff;
+  box-shadow: 0 1px 5px #ccc;
+}
+.search__text {
+  width: 100%;
+}
+.search__text__input {
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  line-height: 3em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #eee;
+  font-size: 20px;
+}
+.search__btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  line-height: 40px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: #43cee0;
+  cursor: pointer;
+}
+.search__btn:hover {
+  background-color: #1eabbd;
+}
+.message{
+  margin: 0 auto;
+  text-align: center;
+}
+.lists {
+  overflow: hidden;
+  margin-left: 20px;
+}
+.lists__item {
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  padding: 0 20px 20px 0;
+  vertical-align: top;
+  text-align: center;
+}
+.lists__item__inner {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.lists__item__link {
+  display: block;
+  text-decoration: none;
+}
+.lists__item__img {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 150px;
+  -webkit-box-shadow: 0 1px 5px #ccc;
+      box-shadow: 0 1px 5px #ccc;
+}
+.lists__item__detail {
+  margin-bottom: 10px;
+  padding-left: 5em;
+  text-indent: -5em;
+  line-height: 1.5em;
+  text-align: left;
+  font-size: 12px;
+}
+.message {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .lists__item {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .lists__item {
+    width: 50%;
+  }
+}
+
